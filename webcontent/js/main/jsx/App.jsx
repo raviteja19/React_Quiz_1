@@ -111,10 +111,10 @@ class App extends React.Component {
 						{data.options.map(function(option,i)
 						{
 							return (
-							<div className="option" key={i}>
-								{i+1}  {option}
-							</div>
-							);
+							    <div className="radio" key={i}>
+								<label><input type="radio" name="optradio"/>{option}</label>
+								</div>
+									);
 						})}
 						</div>
 					</div>
@@ -192,7 +192,7 @@ class App extends React.Component {
 
    render() {
 var me=this;
-
+console.log(me.state.quizQuestion.length);
          return (
 <div className="container-fluid">
    <div id="home-page" className="home-page">
@@ -256,6 +256,7 @@ var me=this;
 				<div className="getQuiz">
 					<div className="viewPaper" id="viewPaper">
 					<label className="header">Quiz Paper</label>
+					<label className="header2" style={ { display: this.state.quizQuestion==0 ? 'block' : 'none' }}>First set question paper to view quiz</label>
 					{this.state.quizQuestion.map(this.viewPaper)}
 					</div>
 				</div>

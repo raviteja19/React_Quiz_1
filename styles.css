@@ -226,6 +226,13 @@ and (orientation : portrait) {
     left: 50%;
 	font-size:18px;
 }
+.container-fluid .home-page .getQuiz .viewPaper .header2
+{
+	padding-top: 40px;
+    position: relative;
+    text-align:center;
+	font-size:18px;
+}
 .container-fluid .home-page .getQuiz .questions .questionName
 {
 	font-weight: bold;
